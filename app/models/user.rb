@@ -12,4 +12,7 @@ class User < ApplicationRecord
 
   # Associate user---Favorites
   has_many :favorites, dependent: :destroy
+
+  # atachment 
+  attachment :profile_image
 end
